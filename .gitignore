@@ -8,6 +8,5 @@ node_modules
 dev
 dist
 build
-scripts
 test
 test.*

@@ -1,18 +1,18 @@
 {
-  "name": "siyuan-plugin-weread",
+  "name": "siyuan-plugin-hsr",
   "author": "mdzz2048",
-  "url": "https://github.com/mdzz2048/siyuan-plugin-weread",
-  "version": "1.2.4",
+  "url": "https://github.com/mdzz2048/siyuan-plugin-hsr",
+  "version": "0.0.1",
   "minAppVersion": "2.9.8",
-  "backends": ["windows", "linux", "darwin", "android", "docker"],
-  "frontends": ["desktop", "browser-mobile", "browser-desktop"],
+  "backends": ["windows", "linux", "darwin"],
+  "frontends": ["desktop"],
   "displayName": {
-    "en_US": "siyuan-weread-plugin",
-    "zh_CN": "微信读书插件"
+    "en_US": "siyuan-weread-hsr",
+    "zh_CN": "高亮搜索结果"
   },
   "description": {
-    "en_US": "Sync weread notes",
-    "zh_CN": "同步微信读书笔记"
+    "en_US": "Search in the current document and highlight the search results",
+    "zh_CN": "在当前文档搜索，并高亮搜索结果"
   },
   "readme": {
     "en_US": "README_en_US.md",

@@ -1,0 +1,1 @@
+Search in the current document and highlight the search results

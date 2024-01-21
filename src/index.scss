@@ -1,0 +1,15 @@
+.highlight-search-result {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
+
+::highlight(search-results) {
+    background-color: rgb(235 235 5);
+    color: black;
+}
+
+::highlight(search-focus) {
+    background-color: rgb(255, 150, 50);
+    color: black;
+}
