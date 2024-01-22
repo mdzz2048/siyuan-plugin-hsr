@@ -123,6 +123,8 @@ function clickNext() {
 }
 function clickClose() {
     props.element.remove()
+    // 清除高亮
+    CSS.highlights.clear()
 }
 </script>
 
