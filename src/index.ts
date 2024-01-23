@@ -11,7 +11,7 @@ export default class PluginHighlight extends Plugin {
 
         this.addTopBar({
             icon: "iconMark",
-            title: this.i18n.addTopBarIcon,
+            title: "文档高亮搜索",
             position: "right",
             callback: () => {
                 this.addSearchElement();
