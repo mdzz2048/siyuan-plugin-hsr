@@ -13,13 +13,13 @@
         </div>
         {{ resultIndex + "/" + resultCount }}
         <div class="search-tools">
-            <div @click="clickLast">
+            <div @click="clickLast" @mouseover.stop="showToolTip($event, '上一个')">
                 <Svg icon="#iconBack" class="icon--14_14"></Svg>
             </div>
-            <div @click="clickNext">
+            <div @click="clickNext" @mouseover.stop="showToolTip($event, '下一个')">
                 <Svg icon="#iconForward" class="icon--14_14"></Svg>
             </div>
-            <div @click="clickClose">
+            <div @click="clickClose" @mouseover.stop="showToolTip($event, '关闭')">
                 <Svg icon="#iconClose" class="icon--14_14"></Svg>
             </div>
         </div>
@@ -29,6 +29,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import Svg from "./Svg.vue"
+import { showToolTip } from "./utils/showtips";
 
 const searchText = ref("")
 const resultCount = ref(0)
@@ -141,6 +142,9 @@ margin-right: 10px;
     display: flex;
     align-items: center;
     margin-left: 5px;
+}
+.search-tools > div {
+    display: flex;
 }
 .icon--14_14 {
     width: 14px;
